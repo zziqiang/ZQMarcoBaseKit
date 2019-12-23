@@ -7,7 +7,6 @@
 //
 
 #import "ZQMacroSupportTools.h"
-#import <UIKit/UIKit.h>
 #import <sys/utsname.h>
 
 @implementation ZQMacroSupportTools

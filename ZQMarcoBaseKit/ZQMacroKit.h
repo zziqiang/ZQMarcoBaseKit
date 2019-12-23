@@ -6,12 +6,12 @@
 //  Copyright © 2019 apple. All rights reserved.
 //
 
-#if __has_include(<ZQMarcoKit/ZQMarcoKit.h>)
+#if __has_include(<ZQMarcoBaseKit/ZQMarcoKit.h>)
 
-#import <ZQMarcoKit/ZQMacroColorFontHeader.h>
-#import <ZQMarcoKit/ZQMacroDeviceHeader.h>
-#import <ZQMarcoKit/ZQMacroViewHeader.h>
-#import <ZQMarcoKit/ZQMacroSimplifyFormHeader.h>
+#import <ZQMarcoBaseKit/ZQMacroColorFontHeader.h>
+#import <ZQMarcoBaseKit/ZQMacroDeviceHeader.h>
+#import <ZQMarcoBaseKit/ZQMacroViewHeader.h>
+#import <ZQMarcoBaseKit/ZQMacroSimplifyFormHeader.h>
 
 #else
 
