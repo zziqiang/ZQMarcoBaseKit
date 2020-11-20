@@ -46,5 +46,6 @@
 
 #define kFont(kNum)      [UIFont systemFontOfSize:kNum]
 #define kFontBold(kNum)  [UIFont boldSystemFontOfSize:kNum]
+#define kFontMedium(kNum) [UIFont fontWithName:@"PingFangSC-Medium" size:kNum]
 
 #endif /* ZQMacroColorFontHeader_h */

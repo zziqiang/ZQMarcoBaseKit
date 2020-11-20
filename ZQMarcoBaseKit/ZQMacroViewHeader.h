@@ -12,9 +12,7 @@
 
 #pragma mark -  屏幕适配
 
-#define kFit_6W(x)       ([UIScreen mainScreen].bounds.size.width * ((x)/375.0))
-#define kFit_6H(x)       ([UIScreen mainScreen].bounds.size.height * ((x)/667.0))
-
+#define Scale(x)       ([UIScreen mainScreen].bounds.size.width * ((x)/375.0))
 
 #pragma mark -  状态栏 导航栏 tabbar高度
 /*状态栏高度*/
@@ -59,5 +57,15 @@ CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init]; \
 maskLayer.frame = View.bounds; \
 maskLayer.path = maskPath.CGPath;\
 View.layer.mask = maskLayer;
+
+/**设置 view 圆角和阴影*/
+#define kViewShadowRadius(View, cornerRadius,shadowRadius,shadowOffset, shadowOpacity, shadowColor)\
+\
+[View.layer setCornerRadius:(cornerRadius)];\
+[View.layer setMasksToBounds:NO];\
+[View.layer setShadowRadius:(shadowRadius)];\
+[View.layer setShadowOffset:(shadowOffset)];\
+[View.layer setShadowOpacity:(shadowOpacity)];\
+[View.layer setShadowColor:[shadowColor CGColor]];
 
 #endif /* ZQMacroViewHeader_h */
